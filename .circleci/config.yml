@@ -8,10 +8,10 @@ jobs:
     steps:
       - checkout
       - node/install:
-          node-version: "12.22"
+          node-version: "19.22"
       - node/install-packages
       - run:
-          command: sudo npm run test
+          command: npm run test
 workflows:
   build-and-test:
     jobs:
